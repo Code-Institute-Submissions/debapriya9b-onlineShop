@@ -23,9 +23,10 @@ from products.views import all_products
 from django.views import static
 from .settings import MEDIA_ROOT
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$/', all_products, name='index'),
+    url(r'^$', all_products, name='index'),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^products/', include(urls_products)),
     url(r'^cart/', include(urls_cart)),
