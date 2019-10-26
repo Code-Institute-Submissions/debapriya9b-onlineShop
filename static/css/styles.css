@@ -11,6 +11,44 @@ footer {
     color: #A9A9A9;
 }
 
+.navbar-default {
+    background-color: #000;
+    border-color: #000;
+}
+
+.navbar {
+    background-image: none;
+    height: 70px;
+}
+
+.navbar-header a {
+    font-family: 'Liu Jian Mao Cao', cursive; 
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.navbar-header a span {
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav {
+    margin-top: 20px;
+}
+
+.nav ul li:hover {
+    background-color: #000;
+}
+
+.second-nav {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+    display: center;
+}
+
 
 .icon-bar {
     background-color: #fff;
