@@ -40,6 +40,11 @@ footer {
     background-color: #000;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #000;
+    background-color: #000;
+}
+
 /*Sidenav bar*/
 
 .sidenav {
@@ -50,7 +55,7 @@ footer {
   top: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   padding-top: 80px;
 }
 
@@ -66,10 +71,11 @@ footer {
   color: #f1f1f1;
 }
 
-.searchbar {
-    width: 70%;
-    border-radius: 10px;
+.navbar-form input {
+    width: 99%;
+    border-radius: 3px;
 }
+
 
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
