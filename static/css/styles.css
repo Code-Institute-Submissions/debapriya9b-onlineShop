@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: 'Quicksand', sans-serif;
     padding-top: 100px;
 }
 
@@ -40,14 +40,49 @@ footer {
     background-color: #000;
 }
 
-.second-nav {
-    background-color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
-    color: #000;
-    display: center;
+/*Sidenav bar*/
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 80px;
 }
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.searchbar {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Sidenavbar end*/
 
 
 .icon-bar {

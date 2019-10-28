@@ -33,14 +33,14 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+        <!--            <li>
                         <div class="display">
                             <form class="navbar-form pull-left" action="{% url 'search' %}" method="get">
                                 <input type="text" name="q">
                                 <button type="search">Search</button>
                             </form>
                         </div>
-                    </li>
+                    </li>   -->
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a></li>
                     <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i>Log Out</a></li>
@@ -60,22 +60,23 @@
             </div>
         </div>
     </nav>
-<div class="container second-nav d-flex justify-content-around">
-    <div class="row">
-        <div class="col-12">
-            <ul class="nav navbar-nav">
-                <li>Necklaces</li>
-                <li>Pendants</li>
-                <li>Earrings</li>
-                <li>Bracelets</li>
-                <li>Rings</li>
-                <li>Sets</li>
-            </ul> 
-            </div>
-        </div>
+    
+<div class="sidenav">
+    <div class="display searchbar">
+        <form class="navbar-form pull-left" action="{% url 'search' %}" method="get">
+            <input type="text" name="q" placeholder="Search">
+            <!--<button type="search">Search</button>-->
+        </form>
     </div>
+    <a href="#about">Necklaces</a>
+    <a href="#services">Pendants</a>
+    <a href="#clients">Earrings</a>
+    <a href="#contact">Bracelets</a>
+    <a href="#contact">Rings</a>
+    <a href="#contact">Sets</a>
+</div>
     
-    
+<div class="main">   
     
     
     
@@ -95,6 +96,7 @@
             <p>@Debapriya Bhattacharya</p>
         </div>
     </footer>
+    </div> 
 </body>
 
 </html>
