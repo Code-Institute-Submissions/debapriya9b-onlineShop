@@ -116,7 +116,7 @@ footer {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 150px;
+    width: 180px;
     height: 150px;
     margin: 0 auto;
 }
@@ -145,3 +145,10 @@ caption p {
     min-height: 40px;
 }
 
+.register-border {
+   border-style: ridge;
+}
+
+.register-border h3 {
+    display: center;
+}
