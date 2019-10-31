@@ -153,6 +153,7 @@ caption p {
     display: center;
 }
 
+/* Front Image*/
 .section-container {
   max-width: 100%;
   margin-left: auto;
@@ -167,7 +168,7 @@ caption p {
   text-align: center;
   color: white;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .title-container img {
@@ -185,3 +186,28 @@ caption p {
   transform: translate(-50%, -50%);
 }
 
+.intro-content h2 {
+    color: #fff;
+}
+
+
+/* End of Front Image*/
+
+legend {
+    display: block;
+    width: 60%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: inherit;
+    color: #DC143C;
+    border: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 990px) {
+.registration-form {
+    margin-left: 25%;
+}
+}

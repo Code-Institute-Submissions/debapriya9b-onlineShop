@@ -7,23 +7,23 @@ python3 manage.py collectstatic
 
 {% load bootstrap_tags %}
 
-{% block page_title %}Login Page{% endblock %} 
+{% block page_title %}Registration Page{% endblock %} 
 
-{% block page_heading %}User Login{% endblock %} 
+{% block page_heading %}User Registration{% endblock %} 
 
 {% block content %}
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 register-border">
-            <h3>Login</h3>
+            <h3>Register</h3>
             <br>
+<p>If you already have an account, you can <a href="{% url 'login' %}">sign in </a></p>
+
 <form method="POST">
     {% csrf_token %} 
-    {{ login_form | as_bootstrap }}
-    <button type="submit" class="btn btn-success">Login</button>
+    {{ registration_form | as_bootstrap }}
+    <button type="submit" class="btn btn-success">Register</button>
 </form>
-<br>
-<p><a href="{% url 'password_reset' %}">Reset Password</a></p>
 <br>
 </div>
 </div>
