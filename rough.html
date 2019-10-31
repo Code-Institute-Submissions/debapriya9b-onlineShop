@@ -1,1 +1,31 @@
 python3 manage.py collectstatic
+
+
+
+
+{% extends 'base.html' %} 
+
+{% load bootstrap_tags %}
+
+{% block page_title %}Login Page{% endblock %} 
+
+{% block page_heading %}User Login{% endblock %} 
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 register-border">
+            <h3>Login</h3>
+            <br>
+<form method="POST">
+    {% csrf_token %} 
+    {{ login_form | as_bootstrap }}
+    <button type="submit" class="btn btn-success">Login</button>
+</form>
+<br>
+<p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+<br>
+</div>
+</div>
+</div>
+{% endblock %}

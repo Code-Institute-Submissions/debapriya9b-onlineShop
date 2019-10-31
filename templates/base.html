@@ -33,6 +33,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
         
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Profile</a></li>
@@ -81,6 +82,18 @@
         </div>
         {% endif %}
         <div class="container">
+            
+<section class="title-container section-container">
+    <img class="responsive-img" src="{% static 'img/bracelet.jpg' %}" alt="title image">
+    <div class="intro-content">
+        <h4>some content</h4>
+        
+    </div>
+</section>
+            
+            
+            
+            
             {% block content %} {% endblock %}
 
         </div>
