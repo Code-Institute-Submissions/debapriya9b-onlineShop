@@ -87,7 +87,12 @@
     <img class="responsive-img" src="{% static 'img/bracelet.jpg' %}" alt="title image">
     <div class="intro-content">
         <h2>some quotes</h2>
-        
+        <div class="display">
+            <form class="navbar-form" action="{% url 'search' %}" method="get">
+                <input type="text" name="q" placeholder="Search">
+                <!--<button type="search">Search</button>-->
+            </form>
+        </div>
     </div>
 </section>
             

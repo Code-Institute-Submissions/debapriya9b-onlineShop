@@ -4,7 +4,9 @@
 {% block page_heading %}{{ user }}'s Profile{% endblock %}
 
 {% block content %}
+<div class="container">
+<h2>Welcome {{ user.username }}!</h2>
+<p>You are logged in as {{ user.email }} </p>
 
-<p>{{ profile.user }}</p>
-<p>{{ profile.email }}</p>
+</div>
 {% endblock %}

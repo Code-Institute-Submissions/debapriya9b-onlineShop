@@ -1,14 +1,16 @@
 body {
     font-family: 'Quicksand', sans-serif;
     padding-top: 100px;
+    min-height: 100vh;
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-top: 1px solid #ededed;
+    border-top: 1px solid #DC143C;
     color: #A9A9A9;
+    font-size: 15px;
 }
 
 .navbar-default {
@@ -203,11 +205,14 @@ legend {
     line-height: inherit;
     color: #DC143C;
     border: 0;
-    text-align: center;
 }
 
 @media screen and (min-width: 990px) {
 .registration-form {
     margin-left: 25%;
 }
+}
+
+h2 {
+    color:#DC143C;
 }
