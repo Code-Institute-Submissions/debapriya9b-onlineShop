@@ -4,6 +4,7 @@
 
 {% block content %}
 <div class="row row-flex">
+    {% if cart_items %}
     {% for item in cart_items %}
     
     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-display">
@@ -32,11 +33,22 @@
         </div>
     </div>
     {% endfor %}
-</div>
-<div class="row">
-    <p>Total</p>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-    <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
-</div>
+    
+    {% else %}
+        <div class="card mb-3">
+            <h3 class="card-header">Looks like your cart is empty!</h3>
+        </div>
+        {% endif %}
+    </div>
+    <div class="total">
+        <h2>Total: €{{ total }}</h2>
+    </div>
+    <div class="checkout-button">
+        {% if total == 0 %}
+        <button type="button" class="btn btn-danger disabled">Submit Payment</button> {% else %}
+        <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a> {% endif %}
+    </div>
+    
+
 
 {% endblock %}
