@@ -34,7 +34,19 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-list-alt" aria-hidden="true"></i>
+        Categories<span class="caret"></span></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Necklaces</a>
+                            <a class="dropdown-item" href="#">Pendants</a>
+                            <a class="dropdown-item" href="#">Earrings</a>
+                            <a class="dropdown-item" href="#">Bracelets</a>
+                            <a class="dropdown-item" href="#">Rings</a>
+                            <a class="dropdown-item" href="#">Sets</a>
+                        </div>
+                    </li>
+
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Profile</a></li>
                     <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log Out</a></li>
@@ -54,12 +66,26 @@
             </div>
         </div>
     </nav>
+    <!--
+    <div class="container">
+    <nav class="navbar navbar-expand-sm justify-content-center" id="second-navbar">
 
-    <div class="sidenav">
+<ul class="nav navbar-nav">
+ <li><a href="/">Necklaces</a></li>
+   <li><a href="/">Pendants</a></li>
+   <li><a href="/">Earrings</a></li>
+   <li><a href="/">Bracelets</a></li>
+   <li><a href="/">Rings</a></li>
+   <li><a href="/">Sets</a></li>
+  </ul>
+</nav>
+</div>
+
+   <!-- <div class="sidenav">
         <div class="display">
             <form class="navbar-form" action="{% url 'search' %}" method="get">
                 <input type="text" name="q" placeholder="Search">
-                <!--<button type="search">Search</button>-->
+                <!--<button type="search">Search</button>
             </form>
         </div>
         <a href="#about">Necklaces</a>
@@ -70,43 +96,43 @@
         <a href="#contact">Sets</a>
     </div>
 
-    <div class="main">
+    <div class="main">-->
 
 
 
-        {% if messages %}
-        <div class="alert alert-success">
-            <div class="messages">
-                {% for message in messages %} {{ message }} {% endfor %}
-            </div>
-        </div>
-        {% endif %}
-        <div class="container">
-            
-<section class="title-container section-container">
-    <img class="responsive-img" src="{% static 'img/bracelet.jpg' %}" alt="title image">
-    <div class="intro-content">
-        <h2>some content</h2>
-        <div class="display">
-            <form class="navbar-form" action="{% url 'search' %}" method="get">
-                <input type="text" name="q" placeholder="Search" class="form-control mr-sm-2">
-                <!--<button type="search">Search</button>-->
-            </form>
+    {% if messages %}
+    <div class="alert alert-success">
+        <div class="messages">
+            {% for message in messages %} {{ message }} {% endfor %}
         </div>
     </div>
-</section>
-            
-            
-            
-            
-            {% block content %} {% endblock %}
+    {% endif %}
+    <div class="container">
 
-        </div>
-        <footer>
-            <div class="container">
-                <p>@Debapriya Bhattacharya</p>
+        <section class="title-container section-container">
+            <img class="responsive-img" src="{% static 'img/bracelet.jpg' %}" alt="title image">
+            <div class="intro-content">
+                <h2>some content</h2>
+                <div class="display">
+                    <form class="navbar-form" action="{% url 'search' %}" method="get">
+                        <input type="text" name="q" placeholder="Search" class="form-control mr-sm-2">
+                        <!--<button type="search">Search</button>-->
+                    </form>
+                </div>
             </div>
-        </footer>
+        </section>
+
+
+
+
+        {% block content %} {% endblock %}
+
+    </div>
+    <footer>
+        <div class="container">
+            <p>@Debapriya Bhattacharya</p>
+        </div>
+    </footer>
     </div>
 </body>
 
