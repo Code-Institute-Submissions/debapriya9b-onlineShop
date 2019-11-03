@@ -4,7 +4,12 @@ body {
     min-height: 100vh;
 }
 
-footer {
+html,
+body {
+    height: 100%!important;
+}
+
+/*footer {
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -12,7 +17,7 @@ footer {
     color: #A9A9A9;
     font-size: 15px;
     background-color: #fff;
-}
+}*/
 
 .navbar-default {
     background-color: #000;
@@ -238,3 +243,52 @@ h2 {
     color:#DC143C;
 }
 
+/*Footer*/
+
+.footer-background {
+    background-color: #000;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright-footer {
+    text-align: right;
+    font: 15px;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    list-style: none;
+    background-color: #000;
+}
+.breadcrumb-item{
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: none;
+    padding-right: 0;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/*footer end*/
