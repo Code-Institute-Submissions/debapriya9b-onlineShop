@@ -284,8 +284,9 @@ footer a:hover {
 }
 
 #contactus {
-    margin-top: 10px;
-    font-size: 15px;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: italic;
 }
 .detail-padding {
     padding-top: 30px;
