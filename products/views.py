@@ -33,7 +33,7 @@ def view_necklaces(request):
     
 def view_pendants(request):
     """View to display only Pendants"""
-    products = Product.objects.all().filter(Category='Pendants')
+    products = Product.objects.all().filter(category='Pendants')
     paginator = Paginator(products, 3) # Show 3 products per page
     
     page = request.GET.get('page')
@@ -47,7 +47,7 @@ def view_pendants(request):
     
 def view_earrings(request):
     """View to display only Earrings"""
-    products = Product.objects.all().filter(Category='Earrings')
+    products = Product.objects.all().filter(category='Earrings')
     paginator = Paginator(products, 3) # Show 3 products per page
     
     page = request.GET.get('page')
@@ -61,7 +61,7 @@ def view_earrings(request):
     
 def view_bracelets(request):
     """View to display only Bracelets"""
-    products = Product.objects.all().filter(Category='Bracelets')
+    products = Product.objects.all().filter(category='Bracelets')
     paginator = Paginator(products, 3) # Show 3 products per page
     
     page = request.GET.get('page')
@@ -75,7 +75,7 @@ def view_bracelets(request):
     
 def view_rings(request):
     """View to display only Rings"""
-    products = Product.objects.all().filter(Category='Rings')
+    products = Product.objects.all().filter(category='Rings')
     paginator = Paginator(products, 3) # Show 3 products per page
     
     page = request.GET.get('page')
@@ -90,7 +90,7 @@ def view_rings(request):
 
 def view_sets(request):
     """View to display only Sets"""
-    products = Product.objects.all().filter(Category='Sets')
+    products = Product.objects.all().filter(category='Sets')
     paginator = Paginator(products, 3) # Show 3 products per page
     
     page = request.GET.get('page')
