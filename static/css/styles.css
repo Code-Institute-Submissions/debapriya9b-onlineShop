@@ -252,8 +252,9 @@ footer a:hover {
 .copyright-footer {
     text-align: right;
     font: 15px;
-    padding-top: 10px;
+    margin-right: 30px;
     color: rgba(255, 255, 255, 0.5);
+    
 }
 
 .breadcrumb {
@@ -280,6 +281,14 @@ footer a:hover {
 .row {
     margin-right: 0px;
     margin-left: 0px;
+}
+
+#contactus {
+    margin-top: 10px;
+    font-size: 15px;
+}
+.detail-padding {
+    padding-top: 30px;
 }
 
 /*footer end*/

@@ -1,13 +1,45 @@
 from django.shortcuts import render, redirect, reverse
+from django.core.mail import send_mail
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from accounts.forms import UserLoginForm, UserRegistrationForm
+from accounts.forms import UserLoginForm, UserRegistrationForm, ContactForm
 
 
 def index(request):
     """Return the index.html file"""
     return render(request,  'index.html')
+
+def contact(request):
+    """View handle contact form requests"""
+    if request.method == 'POST':
+        contact_form = ContactForm(request.POST)
+        if contact_form.is_valid():
+            message = request.POST['message']
+            subject = request.POST['subject']
+            send_mail(
+                subject,
+                "Message from: " +
+                request.POST['email'] +
+                "Message: " +
+                message,
+                'from@example.com',
+                ['debapriya9b@gmail.com'],
+                fail_silently=False,
+            )
+            messages.success(request, "Your message has been sent!",
+                                      extra_tags="alert-success")
+            return redirect(reverse('index'))
+        else:
+            messages.error(request, "Unable to send message at this time",
+                                    extra_tags="alert-danger")
+    else:
+        contact_form = ContactForm()
+    return render(request, 'contact.html', {'contact_form': contact_form})
+
+
+
+
 
 
 @login_required

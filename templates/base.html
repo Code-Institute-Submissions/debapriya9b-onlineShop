@@ -38,12 +38,12 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-list-alt" aria-hidden="true"></i>
         Categories<span class="caret"></span></a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#">Necklaces</a>
-                            <a class="dropdown-item" href="#">Pendants</a>
-                            <a class="dropdown-item" href="#">Earrings</a>
-                            <a class="dropdown-item" href="#">Bracelets</a>
-                            <a class="dropdown-item" href="#">Rings</a>
-                            <a class="dropdown-item" href="#">Sets</a>
+                            <a class="dropdown-item" href="{% url 'necklaces' %}">Necklaces</a>
+                            <a class="dropdown-item" href="{% url 'pendants' %}">Pendants</a>
+                            <a class="dropdown-item" href="{% url 'earrings' %}">Earrings</a>
+                            <a class="dropdown-item" href="{% url 'bracelets' %}">Bracelets</a>
+                            <a class="dropdown-item" href="{% url 'rings' %}">Rings</a>
+                            <a class="dropdown-item" href="{% url 'sets' %}">Sets</a>
                         </div>
                     </li>
 
@@ -56,7 +56,7 @@
                     {% endif %}
                     <li>
                         <a href="{% url 'view_cart' %}">
-                            <i class="fa fa-shopping-cart"></i> Cart
+                            <i class="fa fa-shipping-cart"></i>Cart
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
                             {% endif %}
@@ -128,23 +128,22 @@
         {% block content %} {% endblock %}
 
     </div>
-    
-       <footer class="footer mt-auto">
-        
+    <footer class="footer mt-auto">
         <div class="row footer-background">
-            <div class="col-sm-6 col-md-6">
+            <div class="col-6">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"> <a rel="noopener" target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube-square hvr-grow" aria-label="youtube"></i></a></li>
                     <li class="breadcrumb-item"> <a rel="noopener" target="_blank" href="https://twitter.com/?lang=en-gb"><i class="fa fa-twitter-square hvr-grow" aria-label="twitter"></i></a></li>
                     <li class="breadcrumb-item"> <a rel="noopener" target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-square hvr-grow" aria-label="facebook"></i></a></li>
                     <li class="breadcrumb-item"> <a rel="noopener" target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram hvr-grow" aria-label="instagram"></i></a></li>
+                    <li class="breadcrumb-item" id="contactus"> <a href="{% url 'contact' %}">Contact Us</a></li>
                 </ol>
             </div>
-            <div class="col-sm-6 col-md-6 copyright-footer">
+            <div class="col-6 copyright-footer">
                 <i class="fa fa-copyright"> Debapriya Bhattacharya </i>
             </div>
         </div>
     </footer>
-    </body>
+</body>
 
 </html>
