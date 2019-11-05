@@ -1,5 +1,5 @@
 from django.core.paginator import Paginator,EmptyPage, PageNotAnInteger
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Product
 
 # Create your views here.
@@ -101,4 +101,16 @@ def view_sets(request):
     except EmptyPage:
         products = paginator.page(paginator.num_pages)
     return render(request, "products.html", {"products": products})       
+    
+    
+def product_detail(request, pk):
+    """
+    Create a view that returns a single
+    feature object based on the feature ID (pk) and
+    render it to the product_detail.html template
+    """
+    product = get_object_or_404(Product, pk=pk)
+    product.views += 1
+    #product.save()
+    return render(request, "product_detail.html", {'product': product})
     

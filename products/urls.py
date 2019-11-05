@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from .views import all_products, view_necklaces, view_pendants, view_earrings, view_bracelets, view_rings, view_sets 
+from .views import all_products, view_necklaces, view_pendants, view_earrings, view_bracelets, view_rings, view_sets, product_detail
 
 urlpatterns = [
     url(r'^$', all_products, name='products'),
@@ -9,4 +9,6 @@ urlpatterns = [
     url(r'^view_bracelets/$', view_bracelets, name='bracelets'),
     url(r'^view_rings/$', view_rings, name='rings'),
     url(r'^view_sets/$', view_sets, name='sets'),
+    url(r'^(?P<pk>\d+)/$', product_detail, name='product_detail'),
+    
 ]
