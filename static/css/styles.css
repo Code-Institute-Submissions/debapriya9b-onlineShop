@@ -14,7 +14,11 @@ body {
 	box-sizing: border-box;
 }
 
-
+.intro-content h2{
+    font-style: italic;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-weight: bold;
+}
 
 .navbar-default {
     background-color: #000;
@@ -265,9 +269,10 @@ footer a:hover {
     font-size: 13px;
     font-style: italic;
 }
+/*
 .detail-padding {
     padding-top: 30px;
-}
+}*/
 
 .pagination-position{
     text-align: center;
