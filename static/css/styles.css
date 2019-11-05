@@ -1,5 +1,5 @@
 body {
-    font-family: 'Quicksand', sans-serif;
+    
     padding-top: 100px;
     min-height: 100vh;
 }
@@ -8,6 +8,12 @@ html,
 body {
     height: 100%!important;
 }
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 
 
 .navbar-default {
@@ -72,50 +78,6 @@ body {
 font-weight: bold;
 }
 
-/*Sidenav bar
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  /*overflow-x: hidden;
-  padding-top: 80px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.navbar-form input {
-    width: 99%;
-    border-radius: 3px;
-}
-
-
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav 
-  font-size: 20px; /* Increased text to enable scrolling 
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-/*Sidenavbar end*/
 
 
 .icon-bar {
@@ -243,6 +205,14 @@ h2 {
 
 /*Footer*/
 
+.footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   z-index: 10000;
+}
+
 .footer-background {
     background-color: #000;
 }
@@ -299,4 +269,7 @@ footer a:hover {
     padding-top: 30px;
 }
 
+.pagination-position{
+    text-align: center;
+}
 /*footer end*/
