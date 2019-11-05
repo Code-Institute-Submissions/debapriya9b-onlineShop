@@ -110,7 +110,5 @@ def product_detail(request, pk):
     render it to the product_detail.html template
     """
     product = get_object_or_404(Product, pk=pk)
-    product.views += 1
-    #product.save()
     return render(request, "product_detail.html", {'product': product})
     
