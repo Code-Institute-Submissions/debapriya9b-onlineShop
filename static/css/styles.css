@@ -276,6 +276,8 @@ footer a:hover {
     padding-top: 30px;
 }
 
+
+
 .pagination-position{
     text-align: center;
     color:#DC143C;
@@ -301,7 +303,10 @@ h5 {
    color: #DC143C; 
 }
 
-
+.reset-password-link a{
+    color: #DC143C;
+    text-decoration: none;
+}
 
 
 

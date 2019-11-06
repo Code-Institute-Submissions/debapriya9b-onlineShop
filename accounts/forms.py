@@ -51,8 +51,8 @@ class ContactForm(forms.Form):
     name = forms.CharField(required=True, max_length=75)
     email = forms.EmailField(required=True, max_length=75)
     subject = forms.CharField(required=True, max_length=75)
-    message = forms.CharField(widget=forms.Textarea, required=True, max_length=500, label='Message **If you are looking for any customized design,please mention your preferred color/material details') 
-    url = forms.URLField(initial='http://', label='Do you have any reference design in mind for your customised jewelry? Great!! Add the URL here')
+    message = forms.CharField(widget=forms.Textarea, required=True, max_length=500, label='Message **If you are looking for any customized design,please mention your preferred color/material/any design reference etc details') 
+   
     
     
     

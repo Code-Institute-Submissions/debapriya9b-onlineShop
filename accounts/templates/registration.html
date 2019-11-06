@@ -11,9 +11,10 @@
 <div class="container registration-form">
     <div class="row">
         <div class="col-sm-12 col-md-6 register-border">
+            <br>
             <legend>Create a new account</legend>
             <br>
-<p>Already got an account? <a href="{% url 'login' %}">Sign in </a></p>
+<p class="reset-password-link">Already got an account? <a href="{% url 'login' %}">Sign in </a></p>
 
 <form method="POST">
     {% csrf_token %} 
