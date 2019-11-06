@@ -3,6 +3,7 @@
 {% load bootstrap_tags %}
 
 {% block content %}
+<div class="container">
 <div class="row row-flex">
     {% if cart_items %}
     {% for item in cart_items %}
@@ -28,7 +29,7 @@
                             <div class="input-group-addon">{{item.quantity}}</div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Amend</button>
+                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Amend</button>
                 </form>
             </p>
         </div>
@@ -38,7 +39,7 @@
     
     {% else %}
         <div class="card mb-3">
-            <h3 class="card-header">Looks like your cart is empty!</h3>
+            <p class="card-header">Looks like your cart is empty!</p>
         </div>
         {% endif %}
     </div>
@@ -47,10 +48,10 @@
     </div>
     <div class="checkout-button">
         {% if total == 0 %}
-        <button type="button" class="btn btn-danger disabled">Submit Payment</button> {% else %}
+        <button type="button" class="btn btn-success disabled">Submit Payment</button> {% else %}
         <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a> {% endif %}
     </div>
-    
-<br>
+  </div>  
+<br><br><br><br><br><br>
 
 {% endblock %}
