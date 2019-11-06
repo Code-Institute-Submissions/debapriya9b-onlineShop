@@ -32,6 +32,10 @@ body {
     border-bottom: #fff;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
 
 .navbar-header a {
     font-family: 'Liu Jian Mao Cao', cursive; 
