@@ -276,5 +276,30 @@ footer a:hover {
 
 .pagination-position{
     text-align: center;
+    color:#DC143C;
 }
-/*footer end*/
+
+.step-links a {
+    color: #DC143C;
+    text-decoration: none;
+}
+
+
+.btn-link{
+    text-align: left;
+    color: #DC143C;
+}
+
+h3 {
+    color: #DC143C;
+    font-weight: bold;
+}
+
+h5 {
+   color: #DC143C; 
+}
+
+
+
+
+

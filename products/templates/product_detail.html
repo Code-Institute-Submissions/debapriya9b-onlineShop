@@ -8,8 +8,9 @@
         </div>
         <div class="col-sm-12 col-md-8">
             <h3>{{ product.name }}</h3>
+            <h5>Product Details:</h5>
             <p>{{product.description}}</p>
-            <p>{{ product.price }}</p>
+            <h5>Price: <span class="glyphicon glyphicon-euro" aria-hidden="true"></span> {{ product.price }}</h5>
         </div>
     
   
@@ -22,11 +23,12 @@
                         </span>
                     </div>
                 </form>
- 
+  
     </div> 
 
 
 
 </div>
 
-<br> {% endblock %}
+<br> <br><br>
+{% endblock %}

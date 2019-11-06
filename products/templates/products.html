@@ -12,8 +12,9 @@
 
                 <h3>{{ product.name }}</h3>
                 <p class="product-description">{{ product.description }}</p>
-                <a class="btn btn-primary buttons-right" href="{% url 'product_detail' product.id %}" role="button">Check details</a>
-                <p>{{ product.price }}</p>
+                <a class="btn btn-link" href="{% url 'product_detail' product.id %}" role="button">More details</a>
+         <!--       <p>{{ product.price }}</p> -->
+           
            
                 <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}
@@ -24,11 +25,12 @@
                         </span>
                     </div>
                 </form>
+               
             </div>
         </div>
     {% endfor %}
     
-<!--   Pagination to display 3 features per page   -->
+<!--   Pagination to display 8 products per page   -->
 <div class="container pagination-position">
   <div class="pagination ">
     <span class="step-links">
