@@ -1,12 +1,16 @@
 {% extends 'base.html' %} {% load bootstrap_tags %} {% block page_title %} Contact Page {% endblock %} {% block content %}
 <main class="container detail-padding">
-        <h1>Contact Us</h1>
+        <br>
+        <legend>Contact Us</legend>
         <!--   Contact form   -->
         <form method="POST">
                 {% csrf_token %} {{ contact_form | as_bootstrap }}
-                <button type="submit" class="btn btn-primary" aria-label="Submit">Submit</button>
+                <button type="submit" class="btn btn-success" aria-label="Submit">Submit</button>
                 <br>
                 <br>
         </form>
 </main>
+<br>
+<br><br>
+<br>
 {% endblock %}

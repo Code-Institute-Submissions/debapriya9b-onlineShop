@@ -269,10 +269,12 @@ footer a:hover {
     font-size: 13px;
     font-style: italic;
 }
-/*
+
+/*Contact form*/
+
 .detail-padding {
     padding-top: 30px;
-}*/
+}
 
 .pagination-position{
     text-align: center;
