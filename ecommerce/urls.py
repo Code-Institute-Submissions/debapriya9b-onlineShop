@@ -23,6 +23,8 @@ from checkout import urls as urls_checkout
 from products.views import all_products
 from django.views import static
 from .settings import MEDIA_ROOT
+from django.views.generic import RedirectView
+from django.views.static import serve
 
 
 urlpatterns = [
@@ -33,5 +35,7 @@ urlpatterns = [
     url(r'^cart/', include(urls_cart)),
     url(r'^ceckout/', include(urls_checkout)),
     url(r'^search/', include(urls_search)),
-    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
+    url(r'^posts', RedirectView.as_view(url='posts/')),
+    url(r'^postsdetails/', include('posts.urls')),
 ]
