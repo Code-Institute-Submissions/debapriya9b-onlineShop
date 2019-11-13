@@ -34,6 +34,7 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="{% url 'get_posts' %}"><i class="fa fa-blog"></i> Posts</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-list-alt" aria-hidden="true"></i>
         Categories<span class="caret"></span></a>
@@ -87,7 +88,7 @@
                 <div class="display">
                     <form class="navbar-form" action="{% url 'search' %}" method="get">
                         <input type="text" name="q" placeholder="Search" class="form-control">
-                        <button type="search">Search</button>
+                        <button type="search" class="btn btn-success">Search</button>
                     </form>
                 </div>
             </div>

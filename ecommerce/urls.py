@@ -36,6 +36,6 @@ urlpatterns = [
     url(r'^ceckout/', include(urls_checkout)),
     url(r'^search/', include(urls_search)),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
-    url(r'^posts', RedirectView.as_view(url='posts/')),
-    url(r'^postsdetails/', include('posts.urls')),
+    url(r'^$', RedirectView.as_view(url='posts/')),
+    url(r'^posts/', include('posts.urls')),
 ]
