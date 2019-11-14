@@ -4,15 +4,18 @@ body {
     min-height: 100vh;
 }
 
-/*html,
+html,
 body {
     height: 100%!important;
-}*/
+}
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
 
 .intro-content h2{
     font-style: italic;
@@ -80,14 +83,12 @@ a {
     font-size: 15px;
     text-decoration: none;
     font-weight: normal;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .dropdown-menu dl dt a:hover{
 font-weight: bold;
 }
-
-
 
 .icon-bar {
     background-color: #fff;
@@ -128,6 +129,7 @@ caption p {
     flex-wrap: wrap;
     margin-top: 30px;
 }
+
 
 .panel-default {
     border-color: transparent;
