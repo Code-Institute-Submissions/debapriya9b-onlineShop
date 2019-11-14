@@ -67,6 +67,11 @@ a {
     background-color: #000;
 }
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    background-color: #000;
+    color: #ffffff;
+}
+
 .navbar-form .form-control {
     display: inline-block;
     width: 100%;
