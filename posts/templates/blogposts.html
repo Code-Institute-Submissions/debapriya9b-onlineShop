@@ -22,14 +22,17 @@
                     </div>
                 </div>
             </div>
-            <hr>
+           
         </div>
-        <div>
-            <div class="row text-center">
-                <button type="button" class="btn btn-success" href="{% url 'new_post' %}">New Post</button>
-            </div>
-        </div>
-        <br><br> <br><br> <br><br>
+         <hr>
+        
+        
     {% endfor %}
     </div>
+    <div>
+            <div class="row text-center">
+                <a class="btn btn-success" href="{% url 'new_post' %}">New Post</a>
+            </div>
+        </div>
+    <br><br> <br><br> <br><br>
 {% endblock %}
