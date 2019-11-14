@@ -334,10 +334,11 @@ h5 {
 
 /*posts*/
 
-.story-img {
+
+/*.story-img {
     margin-top: 25%;
     display: block;
-}
+}*/
 
 .boldtext{
     font-weight: bold;
@@ -345,7 +346,12 @@ h5 {
 
 .img-blogpost{
     height: 300px;
-    width: auto;
+    width: 300px;
+}
+
+.img-circle{
+    width:100px;
+    height: 100px; 
 }
 
 /* Product details*/
