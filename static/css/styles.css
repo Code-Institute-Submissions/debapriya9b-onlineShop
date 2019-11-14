@@ -353,3 +353,9 @@ h5 {
 .input-group-addon, .input-group-btn, .input-group .form-control {
     width: 100px;
 }
+
+/*Cart*/
+
+.cart-amend-button {
+    margin-top: 10px;
+}
