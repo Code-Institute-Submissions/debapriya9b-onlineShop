@@ -90,6 +90,12 @@ a {
 font-weight: bold;
 }
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
+    background-color: #000;
+}
+
+
 .icon-bar {
     background-color: #fff;
 }
