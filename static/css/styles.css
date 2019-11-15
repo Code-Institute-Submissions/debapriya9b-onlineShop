@@ -365,3 +365,17 @@ h5 {
 .cart-amend-button {
     margin-top: 10px;
 }
+
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+.navbar-header a {
+    font-family: 'Liu Jian Mao Cao', cursive; 
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.navbar-header a span {
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+}
