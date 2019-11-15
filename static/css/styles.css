@@ -55,8 +55,8 @@ a {
     margin-top: 20px;
 }
 
-.active, .navigation-link:hover {
-/*.navbar-nav li:hover {*/
+/*.active, .navbar-nav li:hover {*/
+.navbar-nav li:hover {
     background-color: #000;
     color:#fff;
     font-weight: bold;
@@ -305,6 +305,10 @@ footer a:hover {
 .pagination-position{
     text-align: center;
     color:#DC143C;
+}
+
+.pagination-space {
+    padding-right: 15px;
 }
 
 .step-links a {
