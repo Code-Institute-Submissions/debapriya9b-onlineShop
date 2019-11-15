@@ -4,12 +4,13 @@
 {% block content %}
 <div class="container">
     <br>
-    <legend>New Post</legend>
+    <!--<legend>New Post</legend>-->
     <br>
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form | as_bootstrap }}
         <button type="submit" class="btn btn-success">Save</button>
+        
     </form>
     
     <br><br><br><br><br>
