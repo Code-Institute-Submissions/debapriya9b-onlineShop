@@ -24,6 +24,7 @@
                     {% if user.is_authenticated %}
                     <a href="{% url 'get_posts' %}" class="btn btn-success">Back to Blog</a>
                     <a href="{% url 'edit_post' post.id %}" class="btn btn-success">Edit Post</a>
+                    <a href="{% url 'delete_post' post.id %}" class="btn btn-danger">Delete Post</a>
                     {% else %}
                     <a href="{% url 'get_posts' %}" class="btn btn-success">Back to Blog</a>
                     {% endif %}
