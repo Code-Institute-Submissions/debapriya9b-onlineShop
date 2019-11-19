@@ -5,11 +5,12 @@
         <div class="col-sm-12 col-md-4 col-lg-4 text-center">
             <!--<a class="story-img" href="#">
                 <img src="/media/images/pendant-blog1.jpg" class="img-circle">
-            </a>
-            <p><span class="boldtext">Author:</span> Internet</p>-->
+            </a>-->
+            
             <br>
             {% if post.image %}
                 <img class="img-blogpost" src="{{ MEDIA_URL }}{{ post.image }}">
+                <p><span class="boldtext">Author:</span> {{ post.author }}</p>
             {% endif %}
         </div>
         <div class="col-sm-12 col-md-8 col-lg-8">
