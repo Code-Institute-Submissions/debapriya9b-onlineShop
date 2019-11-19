@@ -9,13 +9,10 @@
                 
                 <img class="product img-responsive center-block" src="{{ MEDIA_URL }}{{ product.image }}"></img>
                 
-        <!--        <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div> -->
-
                 <h3>{{ product.name }}</h3>
                 <p class="product-description">{{ product.description }}</p>
                 <a class="btn btn-link" href="{% url 'product_detail' product.id %}" role="button">More details</a>
-         <!--       <p>{{ product.price }}</p> -->
-           
+        
            
                 <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}

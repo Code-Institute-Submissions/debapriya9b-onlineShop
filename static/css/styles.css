@@ -55,7 +55,7 @@ a {
     margin-top: 20px;
 }
 
-/*.active, .navbar-nav li:hover {*/
+
 .navbar-nav li:hover {
     background-color: #000;
     color:#fff;
@@ -339,11 +339,6 @@ h5 {
 /*posts*/
 
 
-/*.story-img {
-    margin-top: 25%;
-    display: block;
-}*/
-
 .boldtext{
     font-weight: bold;
 }
@@ -384,19 +379,3 @@ h5 {
 }
 }
 
-/*Style for active buttons*/
-
-/*.btn {
-  border: none;
-  outline: none;
-  background-color: #000;
-  cursor: pointer;
-  color:#fff;
-}
-
-/* Style the active class, and buttons on mouse-over */
-/*.active, .btn:hover {
-  background-color: #000;
-  color: white;
-  font-weight: bold;
-}*/

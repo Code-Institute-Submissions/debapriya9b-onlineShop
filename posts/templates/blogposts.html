@@ -1,38 +1,31 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <div class="container">
-    <br><br>
-    {% for post in posts %}
-        <div class="row">
-            <div class="col-md-2 col-sm-3 text-center">
-                <a class="story-img" href="#">
+    <br><br> {% for post in posts %}
+    <div class="row">
+        <div class="col-md-2 col-sm-3 text-center">
+            <a class="story-img" href="#">
                     <img src="{{ MEDIA_URL }}{{ post.image }}" class="img-circle">
                 </a>
-                <!--<p><span class="boldtext">Author:</span> {{post.author}}</p>-->
-            </div>
-            <div class="col-md-10 col-sm-9">
-                <h3>{{ post.title }}</h3>
-                <div class="row">
-                    <div class="col-xs-9">
-                        <p>{{ post.content|truncatewords:30 }}</p>
-                        <p><a href="{% url 'post_detail' post.id %}" class="btn-link">Read more</a></p>
-                        <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
-                        <p><span class="boldtext">Views:</span> {{post.views}}</p>
-                        <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
-                    </div>
+        </div>
+        <div class="col-md-10 col-sm-9">
+            <h3>{{ post.title }}</h3>
+            <div class="row">
+                <div class="col-xs-9">
+                    <p>{{ post.content|truncatewords:30 }}</p>
+                    <p><a href="{% url 'post_detail' post.id %}" class="btn-link">Read more</a></p>
+                    <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
+                    <p><span class="boldtext">Views:</span> {{post.views}}</p>
+                    <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
                 </div>
             </div>
-           
         </div>
-         <hr>
-        
-        
-    {% endfor %}
+
     </div>
-    <div>
-            <div class="row text-center">
-                <a class="btn btn-success" href="{% url 'new_post' %}">New Post</a>
-            </div>
-        </div>
-    <br><br> <br><br> <br><br>
-{% endblock %}
+    <hr> {% endfor %}
+</div>
+<div>
+    <div class="row text-center">
+        <a class="btn btn-success" href="{% url 'new_post' %}">New Post</a>
+    </div>
+</div>
+<br><br> <br><br> <br><br> {% endblock %}
