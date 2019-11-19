@@ -1,4 +1,4 @@
-  Travis Testing
+Travis Testing
   
   [![Build Status](https://travis-ci.org/debapriya9b/onlineShop.svg?branch=master)](https://travis-ci.org/debapriya9b/onlineShop)
   
@@ -37,8 +37,6 @@ Framework / Libraries
 - [Bootstrap](https://getbootstrap.com/)
 
 Tools:
-- [Whitenoise](http://whitenoise.evans.io/en/stable/)
-- [Pygal](http://pygal.org/en/stable/)
 - [Git](https://en.wikipedia.org/wiki/Git)
 
 Databases:
@@ -48,7 +46,7 @@ Databases:
 
 ## Automated tests
 - I used [Travis](https://travis-ci.org/) to test my test.py files.
-[![Build Status](https://travis-ci.org/JordenCI/UnicornAttractor---Milestone-4.svg?branch=master)](https://travis-ci.org/JordenCI/UnicornAttractor---Milestone-4)
+[![Build Status](https://travis-ci.org/debapriya9b/onlineShop.svg?branch=master)](https://travis-ci.org/debapriya9b/onlineShop)
 
 ### Validation services
 - I used [This HTML validator](https://validator.w3.org/) to ensure my code was legal.
