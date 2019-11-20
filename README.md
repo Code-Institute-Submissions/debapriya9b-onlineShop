@@ -8,13 +8,43 @@ Deployed project below:
 
 ## UX
 
+This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, specifically the **Full Stack Frameworks** module. 
 
+- Project Purpose: In this project, I need to build a full-stack site based around business logic used to control a centrally-owned dataset. I need to set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
 
-## User stories
+### User Stories
+"**_As a customer, I would like to_** _______________"
 
+- *view the site* from **any device** *(mobile, tablet, desktop)*. 
+- get a jewelry website that can be searched by category, similar items and using text search, making it easy to find specific things or enjoy browsing categories that interest me
+- payment procedure should be easy to handle
+- have a jewelry website where I can get new designs, fun to wear
+- have a jewelry website where I can get custom designed jewelry
+- have a jewelry website where I can order customized gift
 
+### Design and Color Scheme
 
-## Wireframes
+Since the website sells jewelry, I chose bright, vibrant colors.
+
+#### Framework
+
+- [Bootstrap 4]( https://getbootstrap.com/ )
+- [jQuery 3.4.1](https://code.jquery.com/jquery/)
+    - In an effort to keep the JavaScript minimal, I have decided to use jQuery as foundation to my scripts framework.
+- [Django 1.11](https://www.djangoproject.com/download/)
+    - Django is a free and open-source web framework that I've used to render the back-end Python with the front-end Bootstrap. We were taught how to use Django 1.11 in the lessons, despite Django 2.0 being the current version,I used Django 1.11
+
+#### Icons
+
+- [Font Awesome 5.8.2](https://fontawesome.com/)
+
+#### Typography
+ -  2[Google Fonts](https://fonts.google.com/) were used across the site:
+   - 'Liu Jian Mao Cao', cursive
+   - 'Quicksand', sans-serif
+
+### Wireframes
+
 
 ## Features
 
@@ -60,14 +90,13 @@ Databases:
                 </a>
             </p>
 - I used [This Python validator](http://pep8online.com/) to ensure my Python was legal.
-    - I also used [autopep](https://pypi.org/project/autopep8/) to format my python code systematically.
+    
 
 ### Stripe payment testing
 Please use the below information to test payments.
 - Card number - 4242424242424242
 - CVC - Any 3 digit number.
 - Expiry date - Any date in the future.
-- 
 
 ## Manual tests
 
@@ -86,9 +115,9 @@ The following **must be installed** on your machine:
 - [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
 ### Instructions
-1. Save a copy of the github repository located at https://github.com/JordenCI/UnicornAttractor---Milestone-4 by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
+1. Save a copy of the github repository located at https://github.com/debapriya9b/onlineShop by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
 ```
-git clone https://github.com/JordenCI/UnicornAttractor---Milestone-4
+git clone https://github.com/debapriya9b/onlineShop
 ```
 2. If possible open a terminal session in the unzip folder or cd to the correct location.
 
@@ -127,7 +156,7 @@ python3 manage.py collectstatic
 
 ## Heroku Deployment
 
-To deploy Family Hub to heroku, take the following steps:
+To deploy Creative Jewelry to heroku, take the following steps:
 
 1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
 
@@ -165,4 +194,17 @@ EMAIL_HOST_PASSWORD | `<your_host_password>`
 
 ## Content
 
+- www.beadinggem.com for post contents
+
 ## Acknowledgements
+
+- The tutors, mentors and support staff at [Code Institute][5]
+- [Corey Schafer][10] for his excellent teaching on Youtube about Django, Python, Server setup and more
+- The [Django docs][11], which are a paragon of documentation
+- The [Python docs][13]
+- My mentor Seun Owonikoko
+
+## Disclaimer
+
+The content of this Website is for educational purposes only.
+
