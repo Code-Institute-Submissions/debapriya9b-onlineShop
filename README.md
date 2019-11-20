@@ -39,9 +39,9 @@ Since the website sells jewelry, I chose bright, vibrant colors.
 - [Font Awesome 5.8.2](https://fontawesome.com/)
 
 #### Typography
- -  2[Google Fonts](https://fonts.google.com/) were used across the site:
-   - 'Liu Jian Mao Cao', cursive
-   - 'Quicksand', sans-serif
+ -  2 [Google Fonts](https://fonts.google.com/) were used across the site:
+'Liu Jian Mao Cao', cursive
+'Quicksand', sans-serif
 
 ### Wireframes
 
