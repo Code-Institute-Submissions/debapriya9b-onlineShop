@@ -2,15 +2,21 @@ Travis Testing
   
   [![Build Status](https://travis-ci.org/debapriya9b/onlineShop.svg?branch=master)](https://travis-ci.org/debapriya9b/onlineShop)
   
-Deployed project below:
+# [Creative Jewelry](https://creativejewelry.herokuapp.com/)
+--- 
+  
+Full Stack Frameworks with Django  - Milestone Project 4 for Code Institute by Debapriya Bhattacharya
 
-[Creative Jewelry](https://)
+---
+
+## Project Summary
+
+Project Purpose: In this project, I need to build a full-stack site based around business logic used to control a centrally-owned dataset. I need to set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
+
+I have made a jewelry website where the owner displays her hand made jewelries.She maintains a blog where she provides users tips and instructions to make DIY projects on jewelry.Users can also write and share their blogs here.Users can buy jewelry if they like.If they want some customised jewelry,they can contact the owner with the details of their requirements.
+
 
 ## UX
-
-This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, specifically the **Full Stack Frameworks** module. 
-
-- Project Purpose: In this project, I need to build a full-stack site based around business logic used to control a centrally-owned dataset. I need to set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
 
 ### User Stories
 "**_As a customer, I would like to_** _______________"
