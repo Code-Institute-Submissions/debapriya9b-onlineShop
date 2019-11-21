@@ -179,7 +179,7 @@ Please use the below information to test payments.
 - CVC - Any 3 digit number.
 - Expiry date - Any date in the future.
 
-## Manual tests
+### Manual tests
 
 - Check logging in and out, views change accordingly
 - Check registering as new user and logging in and out and in again
