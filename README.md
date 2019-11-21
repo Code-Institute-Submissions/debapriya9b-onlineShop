@@ -22,7 +22,9 @@ This project is part of my [Code Institute](https://codeinstitute.net/) Full Sta
 - have a jewelry website where I can get custom designed jewelry
 - have a jewelry website where I can order customized gift
 
-### Design and Color Scheme
+### Design
+
+### Color Scheme
 
 - Since the website sells jewelry, I chose bright, vibrant colors.
 
@@ -109,7 +111,7 @@ This project is part of my [Code Institute](https://codeinstitute.net/) Full Sta
 - Each checkout page features an order summary, which lists all the items in the users cart, title, price and quantity.
 - User need to populate their details like Name, contact no., delivery address and payment card details and then submit for payment.
 
-### Post Page
+### Blog Post Page
 
 - Since it is a handmade jewelry website, interested users can share their write ups related to jewelry making and other stuffs related to jewelry here in this Blog page.
 - No of views for each post will be automatically updated.
@@ -147,7 +149,7 @@ Tools:
 Databases:
 - [SQLite](https://www.sqlite.org/docs.html)
 - [PostgreSQL](https://www.postgresql.org/docs/)
-- 
+
 ## Testing
 
 A thorough mix of automated and manual testing have gone into building the project. In addition to tests, I have validated all files against online validation sites, and checked compatibilities across various modern browsers and devices.
@@ -293,9 +295,9 @@ EMAIL_HOST_PASSWORD | `<your_host_password>`
 ## Acknowledgements
 
 - The tutors, mentors and support staff at [Code Institute][5]
-- [Corey Schafer][10] for his excellent teaching on Youtube about Django, Python, Server setup and more
-- The [Django docs][11], which are a paragon of documentation
-- The [Python docs][13]
+- Mini Projects learnt from Code Institute
+- [Django docs][11]
+- [Python docs][13]
 - My mentor Seun Owonikoko
 
 ## Disclaimer
