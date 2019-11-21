@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from .models import Post
 from .forms import BlogPostForm
@@ -29,7 +30,7 @@ def post_detail(request, pk):
     post.save()
     return render(request, "postdetail.html", {'post': post})
 
-
+@login_required()
 def create_or_edit_post(request, pk=None):
     """
     Create a view that allows us to create
