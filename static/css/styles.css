@@ -369,12 +369,12 @@ h5 {
 @media screen and (min-width: 767px) and (max-width: 991px) {
 .navbar-header a {
     font-family: 'Liu Jian Mao Cao', cursive; 
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bolder;
 }
 
 .navbar-header a span {
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Quicksand', sans-serif;
 }
 }
