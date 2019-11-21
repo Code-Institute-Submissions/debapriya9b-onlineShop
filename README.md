@@ -48,7 +48,82 @@ Since the website sells jewelry, I chose bright, vibrant colors.
 
 ## Features
 
+### Base template (navbar & footer)
+- Navbar
+    - Site logo to navigate back to homepage.
+    - Home button to navigate back to homepage.
+    - Login button for existing users to log back in.
+    - Register button for new users to register.
+      Once the user has logged in.
+    - removal of login and register button.
+    - Logout button to end their session.
+    - Explore drop down to enable users to navigate the site from any html page.
+    - Search bar enabling users to search for products via key words.
+- Footer
+    - Contact form enabling users to submit contact requests.
+    - Social media buttons which currently link homepage of the sites however would link to this websites social.
+
+### Index (homepage)
+- Register button which is hidden if user is already registered. 
+- Icons which link to different parts of the site.
+
+### Products
+- Index page users can see all the products
+- Pagination to only display 8 products per page.
+- Users can straight away add a product in the cart
+- Users can go to detailed view product to check price details and other details of the product. From detailed view page also user can add a product in the cart
+- Products can be searched by Categories through Navigation bar.
+
+### Profile page.
+- Users can check their login details here.
+
+### Contact Page
+
+- The contact page contains a form for the user to fill in to send the shop owner an email.
+- Name, email address, subject and message are all required fields so that the shop owner receives all the information she needs to respond.
+- When the user clicks "send" the email is processed and sent via emailjs to Owner’s email address and user has been notified via message.
+
+### Register Page
+
+- A user who is not logged in can create a new account using the register page. The page on this form includes a username (which must be unique), email address, password and password conformation fields. 
+- Information about what characters are accepted by these fields is displayed with the form.
+- If a user who is already logged in tries to access this page, they are redirected to the home page.
+- After registration, user will be notified via a message.
+
+### Login Page
+- The login page features a standard login form asking for username and password.
+- Validation for this form is handled in the back end and relevant feedback is sent to the user when they sign in.
+- User can reset password if needed from this page.
+
+### Log out page
+- Any user who clicks on "Log out" from the navigation bar is automatically logged out and their session data cleared.
+
+### Cart page
+
+- The shopping cart page features a summary of all the items the user has added to their cart.
+- Each list item includes a picture of the item, the item title and price.
+- A quantity field is displayed with each cart item, giving the user the ability to adjust the quantity in their cart. Any time a quantity is adjusted the subtotal displayed is updated to reflect the change.
+
+### Checkout page
+
+- Each checkout page features an order summary, which lists all the items in the users cart, title, price and quantity.
+- User need to populate their details like Name, contact no., delivery address and payment card details and then submit for payment.
+
+### Post Page
+
+- Since it is a handmade jewelry website, interested users can share their write ups related to jewelry making and other stuffs related to jewelry here in this Blog page.
+- No of views for each post will be automatically updated.
+- Users can view others’ blogs too.
+- Edit/Delete options are there for logged in users
+
+
 ## Features Left to Implement
+
+- In the blog post any user can edit/delete other users’ posts. I need to make it user specific so that users can only get the access to edit/delete for their own posts.
+- Review section for users for each product they buy.
+- Checkout pages to include a field for customers to enter discount codes or coupons to adjust their final payment cost.
+- User profile page will show more details like buying history of the user.
+
 
 ## Technologies Used
 
@@ -72,9 +147,12 @@ Tools:
 Databases:
 - [SQLite](https://www.sqlite.org/docs.html)
 - [PostgreSQL](https://www.postgresql.org/docs/)
+- 
+## Testing
 
+A thorough mix of automated and manual testing have gone into building the project. In addition to tests, I have validated all files against online validation sites, and checked compatibilities across various modern browsers and devices.
 
-## Automated tests
+### Automated tests
 - I used [Travis](https://travis-ci.org/) to test my test.py files.
 [![Build Status](https://travis-ci.org/debapriya9b/onlineShop.svg?branch=master)](https://travis-ci.org/debapriya9b/onlineShop)
 
@@ -94,11 +172,27 @@ Databases:
 
 ### Stripe payment testing
 Please use the below information to test payments.
+
 - Card number - 4242424242424242
 - CVC - Any 3 digit number.
 - Expiry date - Any date in the future.
 
 ## Manual tests
+
+- Check logging in and out, views change accordingly
+- Check registering as new user and logging in and out and in again
+- Check all links in navbar and footer, confirm opening in new tabs
+- Click 'Forgot password' and confirm email link
+- For the posts, no. of views for each post is getting updated
+- Check switching between pages
+- Contact Us form is working fine.
+- Cart is adding the products properly
+- Checkout function is working fine.
+- Check display is reasonable with reasonable resizings of browser window
+- Check that filtering works by confirming in the Python shell
+- Change things in the admin panel and try to break stuff (e.g. delete a user and then check profile removed by CASCADE)
+
+
 
 # Deployment
 
@@ -208,3 +302,7 @@ EMAIL_HOST_PASSWORD | `<your_host_password>`
 
 The content of this Website is for educational purposes only.
 
+[5]: https://codeinstitute.net/full-stack-software-development-diploma/
+[10]: https://twitter.com/CoreyMSchafer
+[11]: https://devdocs.io/django~1.11/
+[13]: https://docs.python.org/3/
