@@ -24,7 +24,7 @@ This project is part of my [Code Institute](https://codeinstitute.net/) Full Sta
 
 ### Design and Color Scheme
 
-Since the website sells jewelry, I chose bright, vibrant colors.
+- Since the website sells jewelry, I chose bright, vibrant colors.
 
 #### Framework
 
