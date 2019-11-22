@@ -23,8 +23,8 @@ class UserRegistrationForm(UserCreationForm):
     
     class Meta:
         model = User
-        fields = ['username','email', 'password1', 'password2']
-        
+        fields = ['username', 'email', 'password1', 'password2']
+  
     def clean_email(self):
         email = self.cleaned_data.get('email')
         username = self.cleaned_data.get('username')
@@ -45,14 +45,11 @@ class UserRegistrationForm(UserCreationForm):
         return password2
         
         
-        
 class ContactForm(forms.Form):
     """Form to allow users to contact site"""
     name = forms.CharField(required=True, max_length=75)
     email = forms.EmailField(required=True, max_length=75)
     subject = forms.CharField(required=True, max_length=75)
-    message = forms.CharField(widget=forms.Textarea, required=True, max_length=500, label='Message **If you are looking for any customized design,please mention your preferred color/material/any design reference etc details') 
-   
-    
-    
-    
+    message = forms.CharField(widget=forms.Textarea, required=True, 
+                              max_length=500, 
+                              label='Message **If you are looking for any customized design, please mention your preferred color/material/any design reference etc details') 

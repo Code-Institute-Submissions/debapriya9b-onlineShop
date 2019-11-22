@@ -1,11 +1,12 @@
-from django.core.paginator import Paginator,EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render, get_object_or_404
 from .models import Product
+
 
 # Create your views here.
 def all_products(request):
     products = Product.objects.all()
-    paginator = Paginator(products, 8) # Show 8 products per page
+    paginator = Paginator(products, 8)  # Show 8 products per page
     
     page = request.GET.get('page')
     try:
@@ -20,7 +21,7 @@ def all_products(request):
 def view_necklaces(request):
     """View to display only necklaces"""
     products = Product.objects.all().filter(category='Necklaces')
-    paginator = Paginator(products, 8) # Show 8 products per page
+    paginator = Paginator(products, 8)  # Show 8 products per page
     
     page = request.GET.get('page')
     try:
@@ -30,11 +31,12 @@ def view_necklaces(request):
     except EmptyPage:
         products = paginator.page(paginator.num_pages)
     return render(request, "products.html", {"products": products})
+    
     
 def view_pendants(request):
     """View to display only Pendants"""
     products = Product.objects.all().filter(category='Pendants')
-    paginator = Paginator(products, 8) # Show 8 products per page
+    paginator = Paginator(products, 8)  # Show 8 products per page
     
     page = request.GET.get('page')
     try:
@@ -44,11 +46,12 @@ def view_pendants(request):
     except EmptyPage:
         products = paginator.page(paginator.num_pages)
     return render(request, "products.html", {"products": products})
+    
     
 def view_earrings(request):
     """View to display only Earrings"""
     products = Product.objects.all().filter(category='Earrings')
-    paginator = Paginator(products, 8) # Show 8 products per page
+    paginator = Paginator(products, 8)  # Show 8 products per page
     
     page = request.GET.get('page')
     try:
@@ -59,10 +62,11 @@ def view_earrings(request):
         products = paginator.page(paginator.num_pages)
     return render(request, "products.html", {"products": products})
     
+    
 def view_bracelets(request):
     """View to display only Bracelets"""
     products = Product.objects.all().filter(category='Bracelets')
-    paginator = Paginator(products, 8) # Show 8 products per page
+    paginator = Paginator(products, 8)  # Show 8 products per page
     
     page = request.GET.get('page')
     try:
@@ -73,10 +77,11 @@ def view_bracelets(request):
         products = paginator.page(paginator.num_pages)
     return render(request, "products.html", {"products": products})   
     
+    
 def view_rings(request):
     """View to display only Rings"""
     products = Product.objects.all().filter(category='Rings')
-    paginator = Paginator(products, 8) # Show 8 products per page
+    paginator = Paginator(products, 8)  # Show 8 products per page
     
     page = request.GET.get('page')
     try:
@@ -91,7 +96,7 @@ def view_rings(request):
 def view_sets(request):
     """View to display only Sets"""
     products = Product.objects.all().filter(category='Sets')
-    paginator = Paginator(products, 8) # Show 8 products per page
+    paginator = Paginator(products, 8)  # Show 8 products per page
     
     page = request.GET.get('page')
     try:

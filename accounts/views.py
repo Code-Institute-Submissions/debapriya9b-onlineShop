@@ -10,6 +10,7 @@ def index(request):
     """Return the index.html file"""
     return render(request,  'index.html')
 
+
 def contact(request):
     """View handle contact form requests"""
     if request.method == 'POST':
@@ -27,8 +28,9 @@ def contact(request):
                 ['debapriya9b@gmail.com'],
                 fail_silently=False,
             )
-            messages.success(request, "Your message has been sent.We will get back to you within 7 working days!",
-                                      extra_tags="alert-success")
+            messages.success(request, 
+                             "Your message has been sent.We will get back to you within 7 working days!",
+                             extra_tags="alert-success")
             return redirect(reverse('index'))
         else:
             messages.error(request, "Unable to send message at this time",
@@ -38,15 +40,12 @@ def contact(request):
     return render(request, 'contact.html', {'contact_form': contact_form})
 
 
-
-
-
-
 @login_required
 def logout(request):
     """Log the user out"""
     auth.logout(request)
-    messages.success(request, "You have successfully been logged out")
+    messages.success(request, 
+                     "You have successfully been logged out")
     return redirect(reverse('index'))
 
 
@@ -59,8 +58,7 @@ def login(request):
 
         if login_form.is_valid():
             user = auth.authenticate(username=request.POST['username'],
-                                    password=request.POST['password'])
-            
+                                     password=request.POST['password'])
 
             if user:
                 auth.login(user=user, request=request)
@@ -68,11 +66,11 @@ def login(request):
                 return redirect(reverse('index'))
                 
             else:
-                login_form.add_error(None, "Your username or password is incorrect")
+                login_form.add_error(None, 
+                                     "Your username or password is incorrect")
     else:
         login_form = UserLoginForm()
     return render(request, 'login.html', {'login_form': login_form})
-    
     
     
 def registration(request):
@@ -93,11 +91,13 @@ def registration(request):
                 messages.success(request, "You have successfully registered")
                 return redirect(reverse('index'))
             else:
-                messages.error(request, "Unable to register your account at this time")
+                messages.error(request, 
+                               "Unable to register your account at this time")
     else:
         registration_form = UserRegistrationForm()
     return render(request, 'registration.html', {
         "registration_form": registration_form})
+
         
 def user_profile(request):
     """The user's profile page"""
