@@ -189,6 +189,7 @@ caption p {
   height: 35vh;
   object-fit: cover;
   border-radius: 5px;
+  opacity: 0.9;
 }
 
 .intro-content {
@@ -390,7 +391,22 @@ h5 {
 .input-group-addon, .input-group-btn, .input-group .form-control {
     width: 78px;
 }
-
-
 }
 
+@media screen and (width: 1024px) {
+    .intro-content h2{
+    font-style: italic;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+}
+
+@media screen and (width: 768px) {
+    .intro-content h2{
+    font-style: italic;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+}
