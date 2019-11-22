@@ -15,7 +15,7 @@ body {
 	box-sizing: border-box;
 }
 
-
+/*Navigation bar*/
 
 .intro-content h2{
     font-style: italic;
@@ -376,6 +376,15 @@ h5 {
 .navbar-header a span {
     font-size: 12px;
     font-family: 'Quicksand', sans-serif;
+}
+}
+
+@media screen and (max-width: 360px) {
+.intro-content h2{
+    font-style: italic;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-weight: bold;
+    font-size: 20px;
 }
 }
 
