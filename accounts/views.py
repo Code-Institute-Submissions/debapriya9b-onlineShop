@@ -27,7 +27,7 @@ def contact(request):
                 ['debapriya9b@gmail.com'],
                 fail_silently=False,
             )
-            messages.success(request, "Your message has been sent!",
+            messages.success(request, "Your message has been sent.We will get back to you within 7 working days!",
                                       extra_tags="alert-success")
             return redirect(reverse('index'))
         else:
