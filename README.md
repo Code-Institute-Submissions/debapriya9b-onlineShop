@@ -53,6 +53,9 @@ I have made a jewelry website where the owner displays her hand made jewelries.S
 
 ### Wireframes
 
+I've used pen and paper to create my wireframe / mock-up.
+All my wireframes can be found in the following link
+[here](https://github.com/debapriya9b/onlineShop/tree/master/wireframes)
 
 ## Features
 
