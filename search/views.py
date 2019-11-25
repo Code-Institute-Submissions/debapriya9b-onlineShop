@@ -7,7 +7,7 @@ from products.models import Product
  
 def do_search(request):
     products = Product.objects.filter(name__icontains=request.GET['q'])
-    paginator = Paginator(products, 3)  # Show 3 products per page
+    paginator = Paginator(products, 4)  # Show 4 products per page
     
     page = request.GET.get('page')
     try:
