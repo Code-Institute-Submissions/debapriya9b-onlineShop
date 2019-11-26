@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Creative Jewelry</title>
-    
+
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    {% block head_js %} 
-    {% endblock head_js %}
+    {% block head_js %} {% endblock head_js %}
 </head>
 
 <body>
@@ -39,18 +38,18 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-list-alt" aria-hidden="true"></i>
         Categories<span class="caret"></span></a>
-        
+
                         <div class="dropdown-menu">
                             <dl>
-                            <dt><a class="dropdown-item" href="{% url 'necklaces' %}">Necklaces</a></dt>
-                            <dt><a class="dropdown-item" href="{% url 'pendants' %}">Pendants</a></dt>
-                            <dt><a class="dropdown-item" href="{% url 'earrings' %}">Earrings</a></dt>
-                            <dt><a class="dropdown-item" href="{% url 'bracelets' %}">Bracelets</a></dt>
-                            <dt><a class="dropdown-item" href="{% url 'rings' %}">Rings</a></dt>
-                            <dt><a class="dropdown-item" href="{% url 'sets' %}">Sets</a></dt>
+                                <dt><a class="dropdown-item" href="{% url 'necklaces' %}">Necklaces</a></dt>
+                                <dt><a class="dropdown-item" href="{% url 'pendants' %}">Pendants</a></dt>
+                                <dt><a class="dropdown-item" href="{% url 'earrings' %}">Earrings</a></dt>
+                                <dt><a class="dropdown-item" href="{% url 'bracelets' %}">Bracelets</a></dt>
+                                <dt><a class="dropdown-item" href="{% url 'rings' %}">Rings</a></dt>
+                                <dt><a class="dropdown-item" href="{% url 'sets' %}">Sets</a></dt>
                             </dl>
                         </div>
-                        
+
                     </li>
 
                     {% if user.is_authenticated %}
