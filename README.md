@@ -19,20 +19,23 @@ I have made a jewelry website where the owner displays her hand made jewelries.S
 ## UX
 
 ### User Stories
-"**_As a customer, I would like to_** _______________"
 
-- *view the site* from **any device** *(mobile, tablet, desktop)*. 
-- get a jewelry website that can be searched by category, similar items and using text search, making it easy to find specific things or enjoy browsing categories that interest me
-- payment procedure should be easy to handle
-- have a jewelry website where I can get new designs, fun to wear
-- have a jewelry website where I can get custom designed jewelry
-- have a jewelry website where I can order customized gift
+- "I want a jewelry site which can be viewed from any device...so that while travelling also I can checkout for shopping"
+- "It would be nice if I can get a jewelry site where I can search by category, similar items and using text search, making it easy to find specific things or enjoy browsing categories that interest me"
+- "I am not into much online transactions...so payment option should be very easy to handle"
+- "There are so many sites but if I get some jewelry site with new modern designs,fun to wear..that will be great!"
+- "Since its an handmade jewelry website..can I ask for custom designed jewelry?"
+- "Wow! I am looking some site where I can order some custom designed jewelry for gifts"
 
 ### Design
 
 ### Color Scheme
 
-- Since the website sells jewelry, I chose bright, vibrant colors.
+Since the website sells jewelry, I chose bright, vibrant colors.
+- Base color: White( #fff)
+- Navigation,Footer color: Black (#000)
+- All buutons color: Green (Bootstap default color btn-success)
+- Headings,Products names,other details color : Crimson (#dc143c)
 
 #### Framework
 
