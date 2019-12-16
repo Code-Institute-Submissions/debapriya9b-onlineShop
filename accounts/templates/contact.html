@@ -2,7 +2,9 @@
 <main class="container detail-padding">
         <br>
         <legend>Contact Us</legend>
+        
         <!--   Contact form   -->
+        
         <form method="POST">
                 {% csrf_token %} {{ contact_form | as_bootstrap }}
                 <button type="submit" class="btn btn-success" aria-label="Submit">Submit</button>
