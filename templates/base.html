@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <!-- Fixed masthead -->
+    <!-- Fixed Navigation bar -->
+
     <nav class="navbar navbar-masthead navbar-default navbar-fixed-top bg-dark navbar-dark">
         <div class="container">
             <div class="navbar-header">
@@ -34,10 +35,9 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="{% url 'get_posts' %}"><i class="fa fa-clipboard"></i> Posts</a></li>
+                    <li><a href="{% url 'get_posts' %}"><i class="fa fa-clipboard"></i> Blogs</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-list-alt" aria-hidden="true"></i>
-        Categories<span class="caret"></span></a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-list-alt" aria-hidden="true"></i> Categories<span class="caret"></span></a>
 
                         <div class="dropdown-menu">
                             <dl>
@@ -51,6 +51,8 @@
                         </div>
 
                     </li>
+
+                    <!-- Options visible for logged in users only -->
 
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Profile</a></li>
@@ -72,6 +74,10 @@
         </div>
     </nav>
 
+
+
+    <!-- Flash Messages to help users understand the usibility -->
+
     {% if messages %}
     <div class="alert alert-success">
         <div class="messages">
@@ -80,6 +86,8 @@
     </div>
     {% endif %}
     <div class="container-fluid">
+        
+    <!-- Introductory Image with search option/ Front Image -->
 
         <section class="title-container section-container">
             <img class="responsive-img" src="{% static 'img/bracelet.jpg' %}" alt="title image">
@@ -93,13 +101,12 @@
                 </div>
             </div>
         </section>
-
-
-
-
-        {% block content %} {% endblock %}
-
-    </div>
+{% block content %} {% endblock %}
+ </div>
+ 
+ 
+ <!-- Footer -->
+ 
     <footer class="footer">
         <div class="row footer-background">
             <div class="col-sm-12 col-md-12">

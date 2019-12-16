@@ -125,6 +125,8 @@ font-weight: bold;
     background-color: #c67605;
 }
 
+/* Product card details*/
+
 .product {
     background-size: contain;
     background-position: center center;
@@ -159,6 +161,8 @@ caption p {
     min-height: 40px;
 }
 
+/* Registraion Page / Login Page */
+
 .register-border {
    border-style: ridge;
 }
@@ -168,6 +172,7 @@ caption p {
 }
 
 /* Front Image*/
+
 .section-container {
   max-width: 100%;
   margin-left: auto;
@@ -204,8 +209,7 @@ caption p {
     color: #fff;
 }
 
-
-/* End of Front Image*/
+/*General*/
 
 legend {
     display: block;
@@ -217,12 +221,6 @@ legend {
     line-height: inherit;
     color: #DC143C;
     border: 0;
-}
-
-@media screen and (min-width: 990px) {
-.registration-form {
-    margin-left: 25%;
-}
 }
 
 h2 {
@@ -301,7 +299,7 @@ footer a:hover {
     padding-top: 30px;
 }
 
-
+/* Pagination */
 
 .pagination-position{
     text-align: center;
@@ -337,7 +335,7 @@ h5 {
     text-decoration: none;
 }
 
-/*posts*/
+/*Blogs*/
 
 
 .boldtext{
@@ -366,6 +364,7 @@ h5 {
     margin-top: 10px;
 }
 
+/* Media Queries*/
 
 @media screen and (min-width: 767px) and (max-width: 991px) {
 .navbar-header a {
@@ -408,5 +407,11 @@ h5 {
     font-family: 'Liu Jian Mao Cao', cursive;
     font-weight: bold;
     font-size: 40px;
+}
+}
+
+@media screen and (min-width: 990px) {
+.registration-form {
+    margin-left: 25%;
 }
 }
