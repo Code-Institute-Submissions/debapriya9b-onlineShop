@@ -1,4 +1,7 @@
 {% extends 'base.html' %} {% load static from staticfiles %} {% load bootstrap_tags %} {% block content %}
+
+<!-- Product details added to cart -->
+
 <div class="container">
     <div class="row row-flex">
         {% if cart_items %} {% for item in cart_items %}
@@ -36,13 +39,22 @@
         </div>
         {% endif %}
     </div>
+    
+   <!-- Total amount to pay --> 
+   
+   
     <div class="total">
         <h2>Total: €{{ total }}</h2>
     </div>
+   
+   <!-- Checkout --> 
+    
     <div class="checkout-button">
         {% if total == 0 %}
         <button type="button" class="btn btn-success disabled">Submit Payment</button> {% else %}
         <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a> {% endif %}
     </div>
 </div>
-<br><br><br><br><br><br> {% endblock %}
+
+<br><br><br><br><br><br> 
+{% endblock %}
