@@ -1,4 +1,7 @@
 {% extends "base.html" %} {% load static from staticfiles %} {% load bootstrap_tags %} {% block head_js %}
+
+<!-- Stripe details for payment option -->
+
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript">
     //<![CDATA[
@@ -8,9 +11,13 @@
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock head_js %} {% block content %}
 <br><br>
+
+<!-- Order summary -->
+
 <div class="container">
     <legend>Order Summary</legend>
 </div>
+
 <div class="container">
     <div class="row row-flex">
 
@@ -31,7 +38,13 @@
         {% endfor %}
     </div>
 </div>
+
+
 <hr>
+
+<!-- Subtotal -->
+
+
 <div class="container">
     <div class="row total">
         <legend>Subtotal: </legend>
@@ -39,7 +52,12 @@
 
     </div>
 </div>
+
+
 <hr>
+
+<!-- Payment details form -->
+
 <div class="container">
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
         <legend>Payment Details</legend>

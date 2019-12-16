@@ -1,4 +1,8 @@
 {% extends 'base.html' %} {% block content %}
+
+<!-- Basic Product informations -->
+
+
 <div class="container">
     <div class="row row-flex">
         {% for product in products %}
@@ -27,6 +31,8 @@
         {% endfor %}
 
         <!--   Pagination to display 8 products per page   -->
+        
+        
         <div class="container pagination-position">
             <div class="pagination ">
                 <span class="step-links">
