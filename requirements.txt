@@ -13,7 +13,7 @@ psycopg2==2.7.3.1
 pycurl==7.19.3
 python-dateutil==2.6.1
 pytz==2017.2
-requests==2.20
+requests==2.31.0
 six==1.5.2
 stripe==1.70.0
 urllib3==1.23
